@@ -1,5 +1,5 @@
-use crate::weather_station_client::Device;
 use std::collections::BTreeMap;
+use weather_station_client::Device;
 
 const OTHER_DEVICE_LOCATION: &str = "other";
 

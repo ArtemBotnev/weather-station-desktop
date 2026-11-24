@@ -1,5 +1,5 @@
-use crate::weather_station_client::error::WeatherStationClientError;
-use crate::weather_station_client::models::{Device, DeviceDailyErrors, Measurement};
+use crate::error::WeatherStationClientError;
+use crate::models::{Device, DeviceDailyErrors, Measurement};
 use reqwest::Client;
 use serde::de::DeserializeOwned;
 use std::time::Duration;
@@ -67,7 +67,7 @@ impl WeatherStationClient {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::weather_station_client::{DailyCalculation, Measure};
+    use crate::{DailyCalculation, Measure};
     use std::io::{Read, Write};
     use std::net::{TcpListener, TcpStream};
     use std::thread;

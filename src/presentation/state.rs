@@ -1,7 +1,7 @@
 use crate::app::settings::{AppSettings, PreferencesStore, ThemeMode};
 use crate::data::weather_repository::WeatherStationRepository;
-use crate::weather_station_client::Device;
 use std::collections::BTreeMap;
+use weather_station_client::Device;
 
 #[derive(Debug, Clone)]
 pub struct AppState {

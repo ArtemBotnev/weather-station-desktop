@@ -4,11 +4,14 @@ version = "1.0.0"
 authors = ["ArtemBotnev <arbotnev7@gmail.com>"]
 edition = "2024"
 
+[workspace]
+members = ["weather_station_client"]
+resolver = "3"
+
 [dependencies]
-iced = { version = "0.13", features = ["tokio"] }
-reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
-serde = { version = "1", features = ["derive"] }
+weather_station_client = { path = "weather_station_client" }
 thiserror = "2"
+iced = { version = "0.13", features = ["tokio"] }
 tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
 
 [dev-dependencies]

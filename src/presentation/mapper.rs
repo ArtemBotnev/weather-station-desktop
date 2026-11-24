@@ -1,6 +1,6 @@
 use crate::domain::use_case::time_from_timestamp;
 use crate::presentation::state::{DeviceMeasuresState, MeasureState, SensorMeasuresState};
-use crate::weather_station_client::{Device, Measure, Measurement};
+use weather_station_client::{Device, Measure, Measurement};
 
 const DASH: &str = "-";
 const DEFAULT_DEVICE_NAME_PREFIX: &str = "Device";

@@ -4283,6 +4283,15 @@ name = "weather-station-desktop"
 version = "1.0.0"
 dependencies = [
  "iced",
+ "thiserror 2.0.21",
+ "tokio",
+ "weather_station_client",
+]
+
+[[package]]
+name = "weather_station_client"
+version = "1.0.0"
+dependencies = [
  "reqwest",
  "serde",
  "thiserror 2.0.21",

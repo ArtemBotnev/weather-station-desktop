@@ -5,12 +5,12 @@ use crate::domain::use_case::group_devices_by_location;
 use crate::presentation::mapper::to_device_measures_state;
 use crate::presentation::message::Message;
 use crate::presentation::state::{AppState, DeviceMeasuresState, SensorMeasuresState};
-use crate::weather_station_client::Device;
 use iced::widget::{
     Column, button, column, container, pick_list, row, scrollable, text, text_input,
 };
 use iced::{Alignment, Element, Fill, Subscription, Task, Theme, time};
 use std::time::Duration;
+use weather_station_client::Device;
 
 const MIN_REFRESH_INTERVAL_SECONDS: u64 = 5;
 const SIDEBAR_WIDTH: u16 = 280;
