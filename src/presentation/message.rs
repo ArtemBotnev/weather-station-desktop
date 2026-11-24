@@ -5,6 +5,8 @@ use weather_station_client::Device;
 
 #[derive(Debug, Clone)]
 pub enum Message {
+    SettingsDrawerToggled,
+    CloseSettingsDrawer,
     HostInputChanged(String),
     PortInputChanged(String),
     RefreshIntervalChanged(String),
