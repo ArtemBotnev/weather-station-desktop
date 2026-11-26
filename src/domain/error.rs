@@ -1,5 +1,5 @@
-use crate::weather_station_client::WeatherStationClientError;
 use thiserror::Error;
+use weather_station_client::WeatherStationClientError;
 
 #[derive(Debug, Error, Clone, PartialEq, Eq)]
 pub enum AppError {

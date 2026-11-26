@@ -1,5 +1,5 @@
 use crate::domain::error::AppError;
-use crate::weather_station_client::{Device, Measurement, WeatherStationClient};
+use weather_station_client::{Device, Measurement, WeatherStationClient};
 
 #[derive(Debug, Clone)]
 pub struct WeatherStationRepository {
